@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gold Bank"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Olá, Seja Bem vindo!"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:layout_marginStart="30dp"
+       android:layout_marginEnd="30dp"
+       app:boxStrokeColor="@color/gold"
+       app:hintTextColor="@color/black"
+       android:outlineAmbientShadowColor="@color/gold"
+       app:errorEnabled="true"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       >
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Digite seu CPF"
+        android:inputType="number"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="-5dp"
+        app:boxStrokeColor="@color/gold"
+        app:hintTextColor="@color/black"
+        android:outlineAmbientShadowColor="@color/gold"
+        app:errorEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Digite Sua Senha"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gold"
+        android:padding="15dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Novo aqui? Cadastre-se"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Esqueceu sua senha? Clique aqui!"
+        android:gravity="center"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

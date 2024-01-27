@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolsbarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gold"
+        app:title="Menu"
+        app:titleTextColor="@color/white"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+
+    <ImageView
+        android:id="@+id/balance"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/saldo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo"
+        app:layout_constraintTop_toBottomOf="@id/balance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/imgCreditCard"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/fatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/txtCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartões"
+        app:layout_constraintTop_toBottomOf="@id/imgCreditCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="-15dp"/>
+
+    <ImageView
+        android:id="@+id/imginvestments"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/poupanca"
+        app:layout_constraintTop_toBottomOf="@id/txtBalance"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/txtInvestments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Investimentos"
+        app:layout_constraintTop_toBottomOf="@id/imginvestments"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgtransfers"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/transferencia"
+        app:layout_constraintTop_toBottomOf="@id/imgCreditCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/txtTransfers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transferências"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/imgtransfers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        android:layout_marginTop="-10dp"/>
+
+    <ImageView
+        android:id="@+id/imgPix"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/pix"
+        app:layout_constraintTop_toBottomOf="@id/txtInvestments"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"  />
+
+    <TextView
+        android:id="@+id/txtPix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pix"
+        app:layout_constraintTop_toBottomOf="@id/imgPix"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="22sp"
+        android:layout_marginTop="-10dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imgBitcoin"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:src="@drawable/bitcoin"
+        app:layout_constraintTop_toBottomOf="@id/txtTransfers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtBitcoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha cripto"
+        app:layout_constraintTop_toBottomOf="@id/imgBitcoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        android:textSize="22sp"
+        android:textColor="@color/black" />
+
+
+   <ImageView
+       android:id="@+id/imgDuvidas"
+       android:layout_width="100dp"
+       android:layout_height="90dp"
+       android:src="@drawable/duvidas"
+       app:layout_constraintTop_toBottomOf="@id/txtPix"
+       app:layout_constraintEnd_toEndOf="@id/guideLine"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtDuvidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dúvidas"
+        app:layout_constraintTop_toBottomOf="@id/imgDuvidas"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/imgFaleConosco"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:src="@drawable/faleconosco"
+        app:layout_constraintTop_toBottomOf="@id/txtBitcoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtFaleConosco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fale Conosco"
+        app:layout_constraintTop_toBottomOf="@id/imgFaleConosco"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLine"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
